@@ -74,3 +74,12 @@ PRACTICE
     }
 
     If we type formNumberString(1,2,3) in the console, after declaring the function formNumberString, what should the output be?
+
+3.  Declare a function named happyBirthday.
+    happyBirthday receives two arguments: name, and age.
+    happyBirthday declares a variable named happy, which contains "Happy birthday ", and a variable named yourYear, which contains ", now you're ".
+    happyBirthday returns a string.
+    The returned string should resemble: "Happy birthday Alex, now you're 30".
+
+    Test your function using:
+    happyBirthday("Alex", 30) in the console

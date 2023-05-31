@@ -1,4 +1,97 @@
+Data types in javascript:
+- Number
+- String
+- Boolean
+- Object
+
+There are other data types, but these are the ones we use most often. Data types can fall into two categories: primitive or complex. Number, string and boolean are primitive types because they are assigned singular values, like:
+
+let number = 42;
+let string = "This is a string";
+let boolean = true;
+
+Complex data types group or use the primitive data types to do things, like:
+
+let object = {
+    number: 42,
+    string: "This is a string",
+    boolean: true
+};
+
+let function = function(number, string, boolean) {
+    return string.concat(number).concat(boolean);
+}
+
 How to declare an object:
 1. const objectName = {
-        propertyName: value
+        propertyName: value,
+        propertyName: value,
+        ...
+        propertyName: function() {
+            statement1;
+            statement2;
+            ...
+            return value;
+        }
     }
+
+Each propertyName should be unique. It can be assigned either a value or function declaration. In programming, properties are also known as keys. Each key is used to access a value.
+
+We can get the value of a property or key using either dot notation or bracket notation.
+
+Dot notation:       objectName.propertyName
+Bracket notation:   objectName[propertyName]
+
+If a propertyname is a string, or more than one term, we have to use bracket notation to call it for its value. If we would like to use a variable holding the property name to call a property or key for its value, we must use bracket notation.
+
+let object = {
+    "multiword property name": value
+}
+
+object["multiword property name"]
+
+OR 
+
+let property = "multiword property name";
+object[property]
+
+WHY DO WE USE OBJECTS?
+
+An object is a group of data, in which we can store a piece of data and name it, so that we can refer to these individual pieces. Objects allow us to group data by theme or concept, such as all the properties of a dog. Instead of saving each individual property one by one using primitives and declaring variable after variable, we can create an object, dog, with multiple variables, each containing one property of a dog.
+
+EXAMPLE
+
+Copy and paste the following code in the console.
+
+let dog = {
+    name: "Roger",
+    age: 7,
+    color: "golden",
+    bark: function() {
+        return "woof woof";
+    }
+}
+
+console.log("What is your dog's name?", dog.name);
+console.log("How old is your dog?", dog.age);
+console.log("What color is your dog?", dog.color);
+console.log("What sound does your dog make?", dog.bark());
+
+What should each prompt output?
+
+PRACTICE
+
+1.  Declare an object, screen.
+    screen has three properties: width, height, backgroundColor.
+    The width is 500, the height is 300, and the backgroundColor is "black".
+    screen has two methods: turnOn and turnOff.
+    turnOn returns "Turned on".
+    turnOff returns "Turned off".
+
+    After declaring the object, screen, what output do I get if I enter:
+    screen.height
+    screen.turnOn()
+
+2.  Declare an object, clock.
+    clock has two properties: hour and minutes.
+    
