@@ -94,4 +94,3 @@ PRACTICE
 
 2.  Declare an object, clock.
     clock has two properties: hour and minutes.
-    
