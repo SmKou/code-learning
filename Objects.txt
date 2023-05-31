@@ -90,7 +90,84 @@ PRACTICE
 
     After declaring the object, screen, what output do I get if I enter:
     screen.height
+    >>
     screen.turnOn()
+    >>
 
 2.  Declare an object, clock.
     clock has two properties: hour and minutes.
+    clock has three methods: getHour, getMinutes, and getTime.
+    getHour returns the value of hour.
+    getMinutes returns the value of minutes.
+    getTime returns a string of the format hh:mm.
+
+    NOTE:
+    To get the value of a variable inside the same object, you'll need to use dot notation on the keyword 'this'. So for this clock object, to get the value of hour inside getHour, you would return:
+    this.hour
+
+    After declaring the object, clock, what output do I get if I call:
+    clock.getHour()
+    >>
+    clock.getMinutes()
+    >>
+    console.log("What time is it?", clock.getTime())
+    >>
+
+CONTINUE: window and document
+
+In the browser, window and document are objects for referring a webpage or tab ("window"), and a webpage ("document"). They are also known as APIs, application programming interfaces. An interface can be seen as a means of utilizing different browser technologies like playing a video, rendering and interacting with a webpage, or getting information about a webpage.
+
+For example:
+
+In the console, type:
+
+window
+>>
+
+document
+>>
+
+While there's a lot to look at, you will notice that they resemble the code for declaring objects. So how about looking up some properties?
+
+What does window.location return?
+>>
+
+window.location.href
+>>
+
+window.location.host
+>> 
+
+In some applications, you might want to know the width and height of the window. For a window, there are the inner dimensions for the viewport and the outer dimensions for the browser. If the property, innerWidth, gives us the width of the viewport, how do we get the innerHeight of the window object?
+
+Let's use some window methods. Three methods we can use for interaction with the browser are alert(), prompt() and confirm().
+
+Try these in the console, and describe what each does.
+
+window.alert("I am warning you!");
+
+window.prompt("What is your favorite number?");
+
+window.confirm("Are you older than 18?");
+
+Since the window object is the root, we don't actually need to be using dot notation. Instead of window.alert(), we can write alert() in the console.
+
+PRACTICE
+
+1.  Name: Calculator
+    Declare a function named addTwoNumbers.
+    addTwoNumbers takes no arguments. Instead, it declares two variables. The value contained in these variables comes from prompts asking the user for a number, and then another number.
+    addTwoNumbers declares a new variable, which contains the sum of the first and second number. It alerts the user of the sum.
+    addTwoNumbers has no return.
+
+    function functionName() {
+        let num1 = prompt()
+        let num2 = prompt()
+        let sum = num1 + num2
+        alert()
+    }
+
+    Remember semicolons after each statement and that each window method receives a string. This string is a message to the user.
+
+2.  Name: Conversion
+
