@@ -169,5 +169,38 @@ PRACTICE
 
     Remember semicolons after each statement and that each window method receives a string. This string is a message to the user.
 
-2.  Name: Conversion
+PROJECT: Conversion
 
+In VS Code, create a new project. The purpose of your project will either be to create a basic operations calculator, a measurements converter, or a cipher for encoding a piece of text. Name your project accordingly.
+
+Set up your project with the following file structure:
+
+    PROJECT
+    - css
+      - styles.css
+    - js
+      - scripts.js
+    index.html
+    README.md
+
+You can use index.html and styles.css later for creating a user interface, once you've learned event handling. For now, focus on using the window methods for display and interaction. Use this code in your index.html file.
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script src="js/scripts.js"></script>
+    </body>
+    </html>
+
+Like css can be in a <style></style> tag, javascript code can be in a <script></script> tag. However, like using external css, we will use an external js script here.
+
+In your scripts.js, you will write your functions and call them. Once you've learned event handling, you can use the functions as callback functions. A callback function is a function called by an event handler when the event it listens, or waits, for has been triggered or has happened.
+
+For now, declare a function for one operation of your project, so for instance, addition for a calculator or converting lbs to grams for a measurement converter. In the function, use prompt() to receive data from the user and alert() to notify them of the answer or result.
+
+Keep it simple. You can add more functionality later on once you have either forms for collecting data, such as a full recipe, or buttons for entering numbers.
+
+Please note, calling your function will only run it once. Until you add a button or loop to repeat executing the function, your current project will only run once. But you can use the console to call your function and do it again.
