@@ -1,0 +1,76 @@
+How to declare a function:
+1. function functionName(arg1, arg2...) {
+        statement1;
+        statement2;
+        ...
+        return value;
+    }
+2.  const functionName = function(arg1, arg2...) {
+        statement1;
+        statement2;
+        ...
+        return value;
+    }
+
+arg1 is an example of a variable name. Arguments are function variables declared when the function is declared.
+
+To call, or execute, a function is:
+
+functionName(data1, data2...)
+
+data1 is an example of a value passed to the function, which will be used as the value of arg1.
+
+EXAMPLE
+
+function sayHello(name) {
+    let greeting = "Hello there, ";
+    return greeting + name;
+}
+
+sayHello("Manny");
+>> Hello there, Manny
+
+Here, we "declare a function" or "define a function" named 'sayHello'. The function takes a value assigned to the variable named 'name'.
+
+Inside the function, another variable is declared, 'greeting', and this variable is assigned the value of "Hello there ". Then we return the result of adding the value of greeting to the value of name.
+
+To call the function, we type sayHello("Manny"). So when the function is executed, it will declare 'name' with a value of "Manny". This is akin to 'let name = "Manny"'.
+
+The function will take the value "Manny" and return "Hello there, Manny". This is the output, or returned value of a function.
+
+PRACTICE
+
+1.  Declare a function with the name sayThankYou().
+    sayThankYou takes one argument. The name of this argument will be name, and it will contain a person's name.
+    sayThankYou will change name to be uppercase and save the uppercase name to the same variable.
+    sayThankYou will have a string named thankYou: "Thank you, ".
+    sayThankYou will concatenate, or add, thankYou and name together in a single string.
+    sayThankYou will return the string.
+    The returned string should resemble: "Thank you, JENNY"
+
+    function functionName(arg1) {
+        let modifiedArg1 = arg1 // modified to be uppercase
+        let string = // thank you string
+        return string + modifiedArg1;
+    }
+    alt. 'string + modifiedArg1' can also be 'string.concat(modifiedArg1)'
+
+    If we type sayThankYou("Alice") in the console,
+    after declaring the function sayThankYou, what should the output be?
+
+
+2.  Declare a function with the name formNumberString().
+    formNumberString takes three arguments. The names of these arguments will be a, b, and c, and each will contain a number value.
+    formNumberString will convert the three arguments into strings.
+    You can choose to save the resulting strings in three new variables like strA, strB, and strC.
+    formNumberString will concatenate, or add, the three strings together.
+    formNumberString will return this string.
+    
+    function functionName(arg1, arg2, arg3) {
+        let strA = arg1 // string
+        let strB = arg2 // string
+        let strC = arg3 // string
+        return strA + strB + strC;
+    }
+
+    If we type formNumberString(1,2,3) in the console, after declaring the function formNumberString, what should the output be?

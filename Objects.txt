@@ -1,0 +1,4 @@
+How to declare an object:
+1. const objectName = {
+        propertyName: value
+    }
