@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Objects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="page-nav">
+        <div>
+            <h1>Objects</h1>
+            <p>The Complex Data Type</p>
+        </div>
+        <div>
+            <a class="button button-primary">top</a>
+            <a href="index.html#objects">Terminology</a>
+            <span><strong>Prev</strong> <a href="functions.html">Functions</a></span>
+            <span><strong>Next</strong> <a href="html.html">HTML</a></span>
+        </div>
+    </nav>
+    <main class="container">
+        <section>
+            <h2>Introduction</h2>
+            <p>There are seven primitive data types in JavaScript. Four discussed thus far from <a href="data-and-variables.html">Data and Variables</a> are Number, String, Boolean,and Undefined. The other three are Null, BigInt and Symbol. If you wish to learn more about them, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">MDN page</a> on data types and structures. Aside from Undefined and Null, the other primitive types are wrapped in object wrappers. </p>
+            <p>You would recognize primitive data types as:</p>
+            <pre><code>
+let sampleNumber = 42;
+let sampleString = "This is a string";
+let sampleBoolean = true;
+            </code></pre>
+            <p>Objects are a complex data type that contain a collection of properties. Properties are like variables. These properties are also
+            called keys because they are called to access values, functions and nested objects.</p>
+            <pre><code>
+let sampleObject = {
+    sampleNumber: 42,
+    "sample string": "This is a string",
+    sampleBoolean: true
+}
+            </code></pre>
+            <p><strong>How to Access an Object's Property</strong></p>
+            <pre><code>
+sampleObject.sampleNumber
+>> 42
+            </code></pre>
+            <p>MDN lists two types of properties: data and accessor. Data properties contain, or refer to, values and objects. While
+            methods are functions belonging to, or enacted by, an object, accessor properties entail specific methods, the get and
+            set, used for retrieving and modifying data properties.</p>
+        </section>
+        <nav class="section-nav">
+            <a href="#create-obj"></a>
+            <a href="#access-obj"></a>
+        </nav>
+        <section id="create-obj">
+            <h3>Create an Object</h3>
+            <p>There is only one way to declare an object. However, when declaring property names, you can either name them like variables keeping them one word and using lower camel case, or you can name them with strings. It's most important, like variables, not to reuse names among the properties. You can use variable names you have elsewhere in your program because the variables in an object will always be attached to the object. You will see this in the next section.</p>
+            <pre><code>
+const objectName = {
+    propertyName: value,
+    propertyName: value,
+    ...
+    propertyName: function() {
+        statement1;
+        statement2;
+        ...
+        return value;
+    }
+}
+            </code></pre>
+            <p>Whether you use let or const to declare an object only affects whether you can reassign a variable to another object. An object's properties can still be modified, defined and deleted even when the object has been declared with const.</p>
+            <pre><code>
+const dogObj = {};
+dogObj.color = 'red, black and white';
+dogObj;
+>> Object { color: 'red, black and white' }
+dogObj = {};
+>> Uncaught TypeError: invalid assignment to const 'dogObj'
+            </code></pre>
+            <p>When declaring properties, whether you choose to name them like variables or with strings will determine how they can be accessed. Properties also don't have to be declared with the object. You can add properties after the fact.</p>
+            <pre><code>
+const pandaObj = {
+    ageInYears: 3,
+    weightInKilos: 396
+};
+pandaObj;
+>> Object { ageInYears: 3, weightInKilos: 396 }
+
+pandaObj.ageInYears = 5;
+pandaObj;
+>> Object { ageInYears: 5, weightInKilos: 396 }
+            </code></pre>
+            <p></p>
+        </section>
+        <section id="access-obj">
+            <h3>Access an Object</h3>
+            <p>There are two ways to access the properties of an object, either dot notation <code class="inline">objectName.propertyName</code> or bracket notation <code class="inline">objectName[propertyName]</code>. Bracket notation can be used regardless whether you decide to name your properties like variables or with strings. You can even use bracket notation with external variables containing the desired property name. With dot notation, it must be the name of the property and the property's name cannot be a string.</p>
+            <p>Here's what you can do with dot notation.</p>
+            <pre><code>
+const dogObj = {
+    name: 'Rover',
+    bark() {
+        return 'woof woof';
+    }
+};
+dogObj.age = 4;
+
+            </code></pre>
+        </section>
+    </main>
+</body>
+</html>
