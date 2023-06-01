@@ -32,8 +32,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+  padding: 0 20px; }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
