@@ -54,9 +54,7 @@ CSS is a specification for styling html elements. Each rule
 
 ------------------------------- Render tree
 
-Refer DOM.
-
-HOW THE BROWSER WORKS
+Refer DOM and CSSOM.
 
 ------------------------------- Static Page
 
