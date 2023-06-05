@@ -293,3 +293,13 @@ footer {
 }
 
 footer .button { text-transform: uppercase }
+
+.practice {
+    font-family: 'Cutive Mono'
+}
+
+/* Messages and Notices
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Addresses features to be implemented */
+.notice { color: red }

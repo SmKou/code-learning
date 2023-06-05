@@ -14,24 +14,90 @@
 <body>
     <header>
         <div>
-            <h1></h1>
-            <p></p>
+            <h1>Code Learning</h1>
+            <p>An Introduction to Programming</p>
         </div>
         <nav>
             <a class="button button-primary">top</a>
+            <a class="button nav-btn" href="#page-list">Pages</a>
             <a class="button nav-btn" href="#terminology">Terminology</a>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Introduction</h2>
-            <p></p>
+            <h2>Welcome</h2>
+            <p><strong>Why start here?</strong><br>If you already understand why picking a language isn't what matters or know why you're here, you can skip to <a href='jump-1'>What will you learn here?</a></p>
+            <p>When attempting to learn something new, not solely out of curiosity or entertainment, but for job prospects and improving one's quality of life, there can be great pressure to learn everything and to learn it all the right way. For programming specifically, there is a lot of material across the web, such as learning platforms like Sololearn and Codecademy, schools or bootcamps like Zero to Mastery and Epicodus, youtube channels, tutorials, languages, tools and framework documentation, certifications and programs by companies to acquire them, and even courses hosted on Udemy and Coursera. Whether you pay for it or not, the path to learning how to program is neither straight nor narrow.</p>
+            <p>Provided the plethora of languages and their libraries, it ends up coming down to preferences. Developers and programmers may espouse the best languages, but choices are often tied to experience, exposure, and the companies and inspirations (or role models) that directed them to one language or another. Working as a developer or programmer, you may find yourself working with multiple languages at once, or transitioning from one to another based on executive decisions, and those executive decisions will more likely be based on those same decisions you would have made from reading articles about what language you should choose. At the end of the day, it follows the 80-20 rule, or the Pareto Principle: "80% of outcomes (or outputs) result from 20% of all causes (or inputs) for any given event.</p>
+            <p>Although languages have their technical advantages over one another and are designed with their philosophies about how to program, much of what can be done or what business would want to be done with them can be built and executed by any programming language. The choice thus comes down to who do you want to work for and what do they use, or what aspects of programming do you want to be easier or handled natively and what aspects you can live with using the given syntax.</p>
+            <p>You can also think of there being tiers. Because of the syntax and the use of compilers and interpreters, the technical advantages of languages often lie in scale and speed, which will not necessarily become apparent until working with big data for processing on servers and native machines or receiving and responding, as well as the native implementation of security protocols.</p>
+            <p>All this aside, if this feels like a lot, that's because it is. It is physically impossible to learn everything, or even half of it. While you may learn the inherent concepts of programming languages, concepts that can be used to learn any programming language and how they implement what you want them to, in your lifetime, you may not learn even 2% of all that's available to learn. But as noted, following the Pareto Principle, you could learn the 20% of any given language that serves 80% of need and implementations.</p>
+            <p id="jump-1"><strong>What will you learn here?</strong></p>
+            <p>Code Learning is not an official organization or educator. It is a step by step learning guide for absolute beginners, and a review for beginners to understand what and why. While other languages may be added later, the first series of lessons will cover the languages of the web used for creating, styling and interacting with websites and web applications: html, css and javascript.</p>
+            <h3>Web Programming</h3>
             <nav>
+                <a href="#software">Software</a>
+                <a href="#pair-programming">Pair Programming</a>
                 <a href="#"></a>
+                <a href="#terminology">Terminology</a>
             </nav>
         </section>
-        <section id="">
-            <h3></h3>
+        <section id="software">
+            <h3>Software</h3>
+            <p>To program for the web, to start, you will need two things: a browser and a text editor. You can use any browser that provides devtools, which is every modern browser. How to access these devtools may not only depend on the browser, but its version. Here is how you open the devtools on Google Chrome, Mozilla Firefox, Safari, and Opera:</p>
+            <ol>
+                <li>Open your browser on any webpage<br>ex. google.com</li>
+                <li>Navigate to your browser's menu</li>
+                <li>Navigate to these options in your browser's menu:
+                    <ul>
+                        <li>
+                            <strong>Firefox</strong>
+                            <br>More Tools &#10148; Web Developer Tools
+                        </li>
+                        <li>
+                            <strong>Chrome</strong>
+                            <br>More Tools &#10148; Developer Tools
+                        </li>
+                        <li>
+                            <strong>Safari</strong>
+                            <br>Develop
+                            <br>Advanced &#10148; Show Develop in menu bar
+                        </li>
+                    </ul>
+                </li>
+                <li>You can also use the following key combinations, instead of navigating the menu:</li>
+                <li>
+                    <strong>Windows</strong>
+                    <br>Inspector: <kbd>Ctrl + Shift + I</kbd>
+                    <br>Console: <kbd>Ctrl + Shift + J</kbd>
+                    <strong>MacOS</strong>
+                    <br>Inspector: <kbd>Cmd + Option + I</kbd>
+                    <br>Console: <kbd>Cmd + Option + J</kbd>
+                </li>
+            </ol>
+            <p>The inspector and console are two of the tools you can access in devtools, each having its own tab, and to navigate between tools, you need only navigate between tabs in the devtools. <span class='notice'>Until I am to incorporate inline code editors, you will have to copy and paste code, or write code in either the console
+            or your text editor.</span></p>
+            <p class="practice practice-1"><strong>Practice</strong></p>
+            <p>You may not understand what you see, but learning to see will help you along as you learn. The inspector allows you to see html (content) and css (styling or visual qualities), while the console allows you to see and use javascript (interaction). There are other tools, which you can look into, but if you're a complete beginner, I would advise you to wait until you've learned the basics of html, css and javascript.</p>
+            <p>When working with devtools, you are working with the browser's copy of code, so making changes will not affect your original documents, or scripts. So while you mess around following the suggestions here, don't worry. You're not changing anyone's hard work.</p>
+            <p><strong>Devtools</strong></p>
+            <p>If you're using Firefox, the Inspector will be the name of the tab, but in Chrome and Safari, the tab is called Elements. Depending on what browser a person is using, they will either say "Look in Elements" or "Look in the Inspector." I will be referring to this tool and tab as Inspector.</p>
+            <p>When you have the Inspector tab open, you will see three panels. The top or left most panel is the html viewer, showing you the organization and content of a webpage. If you're using Firefox, the html panel has a searchbar at the top for searching through html elements.</p>
+            <ul>
+                <li>Hover over the code in the Inspector. Notice that lines become highlighted as you hover over them and on the webpage, elements are being highlighted. </li>
+
+            </ul>
+            <p><strong>Using the Inspect Element tool</strong></p>
+            <ul>
+                <li>Navigate to the top left corner of the devtools. There's a symbol, a square outline with a pointer in its bottom right corner. This is the Inspect Element symbol, and if you hover it, there will be a note: Select an element in the page to inspect it - Ctrl + Shift + C. The key combination can be used to activate this tool, instead of having to click it.</li>
+                <li>Activate the Inspect Element tool.</li>
+                <li>On the webpage you have open, hover over it and you will find elements being hightlighted on the page and lines of code being hightlighted in the Elements tab of devtools.</li>
+                <li>With the Inspect Element tool active, if you click on an element on the page, the code will be highlighted in the Elements tab</li>
+            </ul>
+        </section>
+        <section id="pair-programming">
+            <h3>Pair Programming</h3>
+            <p></p>
         </section>
         <section id="terminology">
             <h3>Terminology</h3>
